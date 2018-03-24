@@ -1,0 +1,8 @@
+prefix=/home/mkhuthir/catkin_ws/install
+
+Name: simple_arm_c
+Description: Description of simple_arm_c
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/mkhuthir/catkin_ws/install/lib 
+Requires: 
