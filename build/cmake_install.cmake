@@ -114,10 +114,24 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
 file(INSTALL DESTINATION "/home/mkhuthir/catkin_ws/install" TYPE FILE FILES "/home/mkhuthir/catkin_ws/build/catkin_generated/installspace/.rosinstall")
 endif()
 
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/mkhuthir/catkin_ws/build/catkin_generated/installspace/simple_arm_c.pc")
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/simple_arm_c/cmake" TYPE FILE FILES
+    "/home/mkhuthir/catkin_ws/build/catkin_generated/installspace/simple_arm_cConfig.cmake"
+    "/home/mkhuthir/catkin_ws/build/catkin_generated/installspace/simple_arm_cConfig-version.cmake"
+    )
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/simple_arm_c" TYPE FILE FILES "/home/mkhuthir/catkin_ws/src/package.xml")
+endif()
+
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/mkhuthir/catkin_ws/build/gtest/cmake_install.cmake")
-  include("/home/mkhuthir/catkin_ws/build/simple_arm_c/cmake_install.cmake")
 
 endif()
 

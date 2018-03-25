@@ -26,6 +26,9 @@ CATKIN_DEVEL_PREFIX:PATH=/home/mkhuthir/catkin_ws/devel
 //Catkin enable testing
 CATKIN_ENABLE_TESTING:BOOL=ON
 
+//Prefix to apply to package generated via gendebian
+CATKIN_PACKAGE_PREFIX:STRING=
+
 //Catkin skip testing
 CATKIN_SKIP_TESTING:BOOL=OFF
 
@@ -132,7 +135,7 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Project
+CMAKE_PROJECT_NAME:STATIC=simple_arm_c
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -383,10 +386,10 @@ rospy_DIR:PATH=/opt/ros/kinetic/share/rospy/cmake
 rostime_DIR:PATH=/opt/ros/kinetic/share/rostime/cmake
 
 //Value Computed by CMake
-simple_arm_c_BINARY_DIR:STATIC=/home/mkhuthir/catkin_ws/build/simple_arm_c
+simple_arm_c_BINARY_DIR:STATIC=/home/mkhuthir/catkin_ws/build
 
 //Value Computed by CMake
-simple_arm_c_SOURCE_DIR:STATIC=/home/mkhuthir/catkin_ws/src/simple_arm_c
+simple_arm_c_SOURCE_DIR:STATIC=/home/mkhuthir/catkin_ws/src
 
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/kinetic/share/std_msgs/cmake
@@ -496,7 +499,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
