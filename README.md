@@ -1,7 +1,10 @@
 [![Udacity - Robotics NanoDegree Program](https://s3-us-west-1.amazonaws.com/udacity-robotics/Extra+Images/RoboND_flag.png)](https://www.udacity.com/robotics)
 
-# simple_arm_c
+# ROS Simple Arm control in C++
 A `simple_arm_c` package to demonstrate how ROS publisher works in C++.  
+
+<p align="center"> <img src="./misc/simple_arm.png"> </p>
+
 
 ### How to Launch the simulation?
 Make sure you already have a catkin workspace to work in!
